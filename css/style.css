@@ -1,0 +1,28 @@
+.big-popup {
+    width: 400px;
+}
+
+.small-popup {
+    width: 800px;
+}
+
+.main-message {
+    padding: 10px;
+}
+
+.margin-small {
+    margin: 10px;
+}
+
+.margin-medium {
+    margin: 15px;
+}
+
+.margin-large {
+    margin: 20px;
+}
+
+.ng-invalid-max, .ng-invalid-min, .error {
+    border-color: red;
+}
+

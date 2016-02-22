@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "unimag-dynamic-score",
+    "description": "Read their information from AYRE to play with it dynamically.",
+    "short_name": "unimag-dynamic-score",
+    "version": "0.1",
+    "browser_action": {
+        "default_title": "Unimag Dynamic Score",
+        "default_popup": "index.html",
+        "default_icon": "images/logo.png"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "debugger",
+        "storage",
+        "http://stackoverflow.com/*"
+    ]
+}

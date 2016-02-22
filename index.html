@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-csp>
+<head>
+    <title>Unimag Dynamic Score Chrome Extension</title>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-controller="ScoreCtrl" ng-class="{'big-popup': !showForm, 'small-popup': showForm}">
+    <div class="container margin-large">
+      <div class="main-message" ng-if="!showForm"><div ng-bind-html="message"></div></div>
+      <div class="row" ng-if="showForm">
+        <form name="scoreform">
+          <table class="table">
+            <thead>
+              <th>COD</th>
+              <th>Asignatura</th>
+              <th>Creditos</th>
+              <th>N1</th>
+              <th>N2</th>
+              <th>N3</th>
+              <th>Final</th>
+            </thead>
+            <tbody>
+              <tr ng-repeat="score in scores">
+                <td>{{ score.id }}</td>
+                <td>{{ score.classname }}</td>
+                <td>{{ score.credits }}</td>
+                <td>
+                  <input type="number" min="0" max="150" class="form-control" name="n1"  ng-model="score.n1">
+                </td>
+                <td>
+                  <input type="number" min="0" max="150" class="form-control" name="n2"  ng-model="score.n2">
+
+                </td>
+                <td>
+                  <input type="number" min="0" max="200" class="form-control" name="n3"  ng-model="score.n3">
+                </td>
+                <td>{{ parseInt(score.n1) + parseInt(score.n2) + parseInt(score.n3) }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+      <div class="row">
+        <h5>Promedio semestral: <span>{{ calcProm() }}</span></h5>
+      </div>
+    </div>
+    <script type="text/javascript" src="lib/jquery/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="lib/angular/angular.js"></script>
+    <script type="text/javascript" src="lib/angular/angular-sanitize.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="app/app.js"></script>
+    <script type="text/javascript" src="app/page.service.js"></script>
+    <script type="text/javascript" src="app/score.controller.js"></script>
+    <script type="text/javascript" src="app/score.service.js"></script>
+    <!--<script type="text/javascript" src="content.js"></script>-->
+</body>
+</html>
