@@ -3,7 +3,7 @@
     "name": "Calculadora de notas Unimag",
     "description": "Lee tu informacion de AYRE para jugar dinamicamente con las notas.",
     "short_name": "Calculadora Unimag",
-    "version": "0.1",
+    "version": "0.2",
     "browser_action": {
         "default_title": "Unimag Dynamic Score",
         "default_popup": "index.html",
