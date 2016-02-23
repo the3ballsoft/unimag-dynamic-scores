@@ -8,7 +8,7 @@
 'use strict';
 
 angular.module('app')
-.controller('ScoreCtrl', function ($scope, ScoreService, $timeout, PageService) {
+.controller('ScoreCtrl', function ($scope, ScoreService) {
   $scope.scores = [];
   $scope.historyScores = [];
   $scope.balancedProm = 0;

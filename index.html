@@ -8,6 +8,7 @@
 </head>
 <body ng-controller="ScoreCtrl" ng-class="{'big-popup': showForm, 'small-popup': !showForm}">
     <div role="main">
+
       <div class="main-message" ng-if="!showForm">
         <div ng-bind-html="message"></div>
         <div class="progress" ng-if="busy">
@@ -20,7 +21,7 @@
           <div class="card blue darken-2 white-text">
             <div class="card-content">
               <span class="card-title">
-                <i class="material-icons">equalizer</i> Unimag dynamic scores</span>
+                <i class="material-icons">equalizer</i> Calculadora de notas Unimag</span>
               <form name="scoreform">
                 <table class="highlight centered">
                   <thead>
