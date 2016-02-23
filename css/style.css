@@ -1,9 +1,46 @@
+body {
+    font-family: "Roboto";
+    line-height: normal;
+    font-size: 14px;
+}
+
+::selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+
+td {
+    padding: 0;
+}
+
+table.highlight>tbody>tr:hover {
+    background-color: #1061B7;
+}
+
+.text-center {
+    text-align: center;
+}
+.pull-right {
+    float: right;
+}
+
+.font-size-m {
+    font-size: 15px;
+}
+
+.font-size-l {
+    font-size: 20px;
+}
+
+.font-size-lx {
+    font-size: 25px;
+}
+
 .big-popup {
-    width: 400px;
+    width: 750px;
 }
 
 .small-popup {
-    width: 800px;
+    width: 400px;
 }
 
 .main-message {
@@ -22,7 +59,7 @@
     margin: 20px;
 }
 
-.ng-invalid-max, .ng-invalid-min, .error {
-    border-color: red;
+.fbra {
+    color: red;
 }
 
